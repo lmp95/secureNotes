@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+  "globals": {
+    "process": true
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "useTabs": true,
+        "bracketSameLine": true,
+        "endOfLine": "auto",
+        "tabWidth": 4,
+        "trailingComma": "es5",
+        "semi": true,
+        "singleQuote": false,
+        "printWidth": 100
+      }
+    ],
+    "no-unused-vars": "warn",
+    "no-constant-binary-expression": "warn",
+    "no-new-native-nonconstructor": "warn",
+    "no-self-compare": "warn",
+    "eqeqeq": "warn",
+    "yoda": "warn",
+    "no-duplicate-imports": "warn",
+    "no-use-before-define": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "18"
+    }
+  }
+}
