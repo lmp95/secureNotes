@@ -3,6 +3,10 @@ To run the App
 ```
 yarn install
 ```
+For ios
+```
+npx pod-install
+```
 
 ```
 npx react-native start
